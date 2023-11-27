@@ -14,7 +14,15 @@
 #define BEST_QUOTE_MSG                  1
 #define DEPTH_UPDATE_MSG                2
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int packet_handler_payload(char *input_data, char *output_data, int payload_size);
+
+#ifdef __cplusplus
+}
+#endif
 
 int main(int argc, char *argv[])
 {
@@ -111,4 +119,6 @@ int main(int argc, char *argv[])
       		        continue;
       		}
       }
+
+      return 0;
 }

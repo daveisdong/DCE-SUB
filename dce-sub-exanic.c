@@ -28,7 +28,13 @@
 #define BEST_QUOTE_MSG			1
 #define DEPTH_UPDATE_MSG		2
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 int packet_handler_full(char *input_data, char *output_data);
+#ifdef __cplusplus
+}
+#endif
 
 int main(int argc, char *argv[])
 {

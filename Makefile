@@ -1,8 +1,8 @@
 CXX = g++
 
 INCLUDES = -I./ 
-CXXFLAGS = -O3 -Wall -DNDEBUG $(INCLUDES)
-LDFLAGS = -lexanic -lpacket_handler -L./
+CXXFLAGS = -O3 -Wall -DNDEBUG $(INCLUDES) 
+LDFLAGS = -lexanic -lpacket_handler ./libpacket_handler.a -L./ 
 
 TARGETS = dce-sub-exanic dce-sub-socket
 
